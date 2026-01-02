@@ -50,3 +50,44 @@ console.log(mySet.size)
 
 mySet.delete(10)
 console.log(mySet.has(10))
+
+const sonlar = [1, 1, 2, 2, 3, 4, 4, 5, 5, 6, 5, 7, 8, 8, 9]
+const newSet = [...new Set(sonlar)]
+console.log(newSet)
+
+const userIds = [101, 102, 101, 105, 102, 110, 105];
+
+const uniqueIds = [...new Set(userIds)]
+console.log(uniqueIds);
+
+const dictionary = new Map()
+dictionary.set('olma', 'apple')
+dictionary.set('banan', 'banana')
+
+console.log(dictionary.has('cherry'))
+console.log(dictionary.size)
+console.log(dictionary)
+
+const aMap = new Map();
+const obj = { id: 1 };
+
+aMap.set(obj, "Admin");
+
+console.log(aMap.has({ id: 1 }));
+console.log(aMap.has(obj));
+
+const mevalar = ['Olma', 'Banan', 'Uzum'];
+
+for (const meva of mevalar) {
+    console.log(meva);
+}
+
+const prices = new Map([
+    ['Bread', 2],
+    ['Milk', 5],
+    ['Cheese', 15]
+]);
+
+for (const [product, price] of prices) {
+    console.log(`${product}: ${price} $`);
+}
