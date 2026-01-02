@@ -1,0 +1,59 @@
+// Destructuring
+const nums = [1, 2, 3, 4, 5]
+
+const [n1, n2] = nums
+// console.log(nums)
+// console.log(n1, n2)
+
+const [first, second,  ...others] = nums
+// console.log(first)
+// console.log(second)
+// console.log(others)
+
+// const person = { name: 'Asilbek', lastName: 'Karomatov', age: 20 }
+// const { name, age } = person
+// person.name = name
+// person.age = age
+// console.log(person.name)
+// console.log(name)
+// console.log(age)
+
+// const { username, ...othernames} = person
+// console.log(username)
+// console.log(othernames)
+
+
+/* Rest operator */
+const total = (...numbers) => {
+    return numbers.reduce((acc, curr) => acc + curr, 0)
+}
+//
+// console.log(total(20, 30, 23, 45))
+
+// const { name, ...othernames } = {
+//     name: 'Asilbek',
+//     lastName: 'Karomatov',
+//     age: 20,
+//     job: 'Frontend Developer'
+// }
+// console.log(name)
+// console.log(othernames)
+// console.log(job)
+
+/* spread operator */
+// const numbers = [10, 15, 20]
+// const max = Math.max(...numbers)
+// const min = Math.min(...numbers)
+// console.log(max)
+// console.log(min)
+
+const array1 = [1, 2, 3, 4, 5]
+const array2 = [...array1, 6, 7, 8, 9, 10]
+console.log(array2)
+
+const person = {
+    name: 'John',
+    age: 4
+}
+const personWithJob = {...person, job: 'Frontend Developer'};
+console.log(personWithJob);
