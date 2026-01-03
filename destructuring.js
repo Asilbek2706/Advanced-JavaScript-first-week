@@ -79,3 +79,24 @@
 // // console.log(qolganlari);
 // // console.log(birinchi);
 //
+// function greet() {
+//     console.log('Hello World')
+// }
+//
+// function respond() {
+//     return setTimeout(() => {
+//         console.log("Hey")
+//     }, 2000)
+// }
+//
+//
+// greet()
+// respond()
+
+const foo = () => console.log('First')
+const bar = () => setTimeout(() => console.log('Second'), 2000)
+const baz = () => console.log('Third')
+
+bar()
+foo()
+baz()
